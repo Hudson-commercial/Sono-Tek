@@ -52,6 +52,12 @@
          .yellow {
          color: #f9aa33;
          }
+         .khaki {
+            color: #f0e68c;
+         }
+         .brown {
+            color: #35281E;
+         }
          .form-group input[type="checkbox"] {
          display: none;
          }
@@ -74,11 +80,14 @@
       <title>Hello, world!</title>
    </head>
    <body>
-      <!-- ******HEADER****** --> 
+
+      <!--//header-->      
+      <section class="promo-section section section-on-bg">
+               <!-- ******HEADER****** --> 
       <header id="header" class="header ">
          <div class="container">
             <h1 class="logo">
-               <a href="index.html"><img src="assets/images/logo.svg" alt=""><span class="text-light">Prime space available</span></a>
+               <a href="index.html"><img src="assets/images/logo.svg" alt=""><span class="brown">Prime space available</span></a>
             </h1>
             <!--//logo-->
             <nav class="main-nav navbar navbar-right navbar-expand-md">
@@ -89,11 +98,11 @@
                </button>
                <div id="navbar-collapse" class="navbar-collapse collapse border-0">
                   <ul class="nav navbar-nav text-light border-0">
-                     <li class="nav-item"><a class="nav-link active text-light" href="#">Home</a></li>
-                     <li class="nav-item"><a class="nav-link text-light" href="#features">Features</a></li>
-                     <li class="nav-item"><a class="nav-link text-light" href="#facts">Facts</a></li>
-                     <li class="nav-item"><a class="nav-link text-light" href="#pricing">Pricing</a></li>
-                     <li class="nav-item">    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                     <li class="nav-item"><a class="nav-link active text-primary" href="#">Home</a></li>
+                     <li class="nav-item"><a class="nav-link text-primary" href="#features">Features</a></li>
+                     <li class="nav-item"><a class="nav-link text-primary" href="#facts">Facts</a></li>
+                     <li class="nav-item"><a class="nav-link text-primary" href="#pricing">Pricing</a></li>
+                     <li class="nav-item">    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal">
                         Contact
                         </button>
                      </li>
@@ -106,19 +115,6 @@
          </div>
          <!--//container-->
       </header>
-      <!--//header-->      
-      <section class="promo-section section section-on-bg">
-         <div class="hero-slider-wrapper">
-            <div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-               <div class="carousel-inner">
-                  <div class="carousel-item active slide slide-1"></div>
-                  <div class="carousel-item slide slide-2"></div>
-                  <div class="carousel-item slide slide-3"></div>
-               </div>
-            </div>
-            <!--//hero-carousel-->
-            <div class="hero-slider-mask"></div>
-         </div>
          <!--//hero-slider-wrapper--> 
          <div class="container promo-content">
             <h2 class="headline">One of the building in the Sono-Tek   <br>is for lease </h2>
@@ -185,17 +181,7 @@
                <!--//container-->
             </div>
             <!--//benefits-->
-            <div class="press-wrapper">
-               <div class="container">
-                  <div class="logos row">
-                     <div class="logo col-6 col-md-3"><img class="img-fluid" src="assets/images/logos/logo-1.svg" alt=""></div>
-                     <div class="logo col-6 col-md-3"><img class="img-fluid" src="assets/images/logos/logo-2.svg" alt=""></div>
-                     <div class="logo col-6 col-md-3"><img class="img-fluid" src="assets/images/logos/logo-3.svg" alt=""></div>
-                     <div class="logo col-6 col-md-3"><img class="img-fluid" src="assets/images/logos/logo-4.svg" alt=""></div>
-                  </div>
-               </div>
-               <!--//container-->
-            </div>
+
             <!--//press-wrapper-->
          </section>
          <!--//overview-section-->
@@ -205,11 +191,13 @@
             </h2>
             <div class="container">
                <div class="row">
+                  <div class="col-md-6">
                   <div class="features-content-wrapper ">
                      <div class="intro mb-3">
                         Below you will find key facts and key features about the property.
                      </div>
                      <!--//intro-->
+                     
                      <ul class="feature-list list-unstyled" id="facts">
                         <li>
                            <div class="[ form-group ]">
@@ -381,14 +369,19 @@
                         </li>
                      </ul>
                      <!--//feature-list-->
+                     </div>
+                  
                   </div>
                   <!--//features-content-wrapper-->
+                     <div class="col-md-6 mt-4">
+                        <img src="IMG_1195.jpg" class="img-fluid mt-4">
+                     </div>
                </div>
                <!--//row-->
             </div>
             <!--//container-->
             <div class="features-figure-wrapper">
-               <img class="img-fluid" src="assets/images/imac-screen.png" alt="">
+               
             </div>
             <!--//features-figure-wrapper-->
             <div class="action-wrapper text-center">
