@@ -21,12 +21,18 @@
          width: 100vw;
          }
          .promo-content {
-         position: relative;
-         top: 50%;
-         background: rgba(0,0,0,.3);
-         width: 70%;
+        /* position: relative;
+         top: 3%;*/
+         background: rgba(0,0,0,.5);
+         /*margin: 0 auto;*/
+      /*   right: 17%;*/
          padding: 4em;
          color: white;
+         width: 100%%;
+
+         }
+         .headline {
+            margin-top: -.7em;
          }
          header {
          background: transparent;
@@ -55,6 +61,9 @@
          .yellow {
          color: #f9aa33;
          }
+         .real-yellow {
+            color: yellow;
+         }
          .khaki {
             color: #f0e68c;
          }
@@ -71,6 +80,10 @@
          }
          .bg-black {
             color: gray;
+         }
+         .far-r {
+            position: absolute;
+            right: 1em;
          }
 
          .form-group input[type="checkbox"] {
@@ -91,8 +104,17 @@
          .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
          display: none;   
          }
+         .card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media only screen and (max-width: 600px) {
+  .far-r {
+    margin-top: 50%;
+  }
+}
       </style>
-      <title>Hello, world!</title>
+      <title>Very nice warehouse space available</title>
    </head>
    <body>
 
@@ -102,14 +124,13 @@
       <header id="header" class="header ">
          <div class="container">
             <h1 class="logo">
-               <a href="index.html"><img src="assets/images/logo.svg" alt=""><span class="brown">Prime space available</span></a>
+
             </h1>
             <!--//logo-->
             <nav class="main-nav navbar navbar-right navbar-expand-md">
                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-               <span> </span>
-               <span> </span>
-               <span> </span>
+            <span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span>
                </button>
                <div id="navbar-collapse" class="navbar-collapse collapse border-0">
                   <ul class="nav navbar-nav text-light border-0">
@@ -121,24 +142,26 @@
                         Contact
                         </button>
                      </li>
+                     <li class="nav-item far-r">           <div class="container promo-content">
+            <h2 class="headline">One of the in the Sono-Tek   <br>complex is for lease </h2>
+            <p class="tagline">The building is 9,100 SF </p>
+            <div class="actions">
+               <a class="btn btn-cta btn-primary" href="https://hudsoncommercial.com/contact-us/" data-toggle="modal" data-target="#signup-modal">Request a showing</a>  
+               <br class="d-sm-inline-block d-md-none">
+            </div>
+         </div></li>
                   </ul>
                   <!--//nav-->
                </div>
                <!--//navabr-collapse-->
+
             </nav>
             <!--//main-nav-->                     
          </div>
          <!--//container-->
       </header>
          <!--//hero-slider-wrapper--> 
-         <div class="container promo-content">
-            <h2 class="headline">One of the better buildings in the Sono-Tek   <br>is for lease </h2>
-            <p class="tagline">The building is 9,100 SF </p>
-            <div class="actions">
-               <a class="btn btn-cta btn-primary" href="https://hudsoncommercial.com/contact-us/" data-toggle="modal" data-target="#signup-modal">Request a showing</a>  
-               <br class="d-sm-inline-block d-md-none">
-            </div>
-         </div>
+
          <!--//container-->
       </section>
       <!--//promo-section-->
@@ -201,7 +224,7 @@
             <!--//press-wrapper-->
          </section>
          <!--//overview-section-->
-         <section id="features" class="features-section section card container p-4 reply-blue text-light">
+         <section id="features" class="features-section section card container p-4 reply-blue card-4 text-light">
             <h2 class="section-title">
                Key Features
             </h2>
@@ -389,8 +412,8 @@
                   
                   </div>
                   <!--//features-content-wrapper-->
-                     <div class="col-md-6 mt-4">
-                        <img src="IMG_1195.jpg" class="img-fluid mt-4">
+                     <div class="col-md-6 mt-0">
+                        <img src="IMG_1195.jpg" class="img-fluid mt-4 card-4">
                      </div>
                </div>
                <!--//row-->
@@ -404,10 +427,11 @@
             </div>
          </section>
       </div>
-      <section class="pricing mt-5">
-         <div class="card container mr-auto ml-auto bg-primary p-5 text-light" id="pricing">
-            <h1 class="text-center m-1">Pricing</h1>
-            <h3 class="text-center mt-4"><i class="fas fa-dollar-sign"></i>7.00 SF plus cam.</h3>
+
+      <section class="pricing mt-5 ">
+         <div class="card container mr-auto ml-auto bg-primary p-5 text-light card-4" id="pricing">
+            <h1 class="text-center m-1"></i>Pricing</h1>
+            <h3 class="text-center mt-4">$7.00 Per sq. ft. Gross</h3>
          </div>
       </section>
       <!--//section-wrapper-->
